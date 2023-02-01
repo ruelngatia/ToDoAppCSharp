@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin-top: 2rem
+}
+
+body {
+    display: flex;
+    background-color: #E4E9FD
+}
+
+.my-conatainer{
+    width: 100%;
+    
+
+}
+
+.title {
+    background-color: #A683E3;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-block: 1rem;
+    margin-bottom: 1em;
+}
+
+.task {
+    padding-inline: .4em;
+    padding-block: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fafafa;
+    margin-bottom : .5em;
+}
+
+.task .left{
+    display: flex;
+    gap:1em;
+}
+
+.task right{
+    margin:auto;
+}
+
+.task button{
+    border: none;
+    height:20px;
+    width:20px;
+    background-color: transparent;
+        
+}
+
+.btn-add {
+    padding-inline: 5px; 
+    padding-block: 3px; 
+    border: none;
+    margin-top: .5em;
+    border-radius: 3px;
+    background-color: #A683E3;
+    color:  white;
+    font-weight: 500;
+    margin-left:1em; 
+    text-decoration: none;
+}
+
+a[class= "btn-add"]{
+    color: white;
+}
+
+.my-conatainer input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid purple;
+    background-color: transparent;
+}
+
+ .my-conatainer input:focus {
+        border-bottom: 2px solid purple;
+        
+ }   

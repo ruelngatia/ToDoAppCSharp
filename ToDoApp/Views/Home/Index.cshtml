@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<TaskModel>
+
+
+<div class="my-conatainer ">
+
+  <partial name="_Title"/>
+  @foreach (var task in Model)
+    {
+          <div class="task">
+              <div class="left">
+                  <input type="checkbox" checked="@task.completed"/>
+                  <h6>@task.task</h6>
+              </div>
+              <div class="right">
+                      <a asp-action="Edit" asp-controller="Edit" asp-route-id="@task.id"><i class="bi bi-pencil-square "></i></a>
+                      <a asp-action="Delete" asp-controller="Delete"  asp-route-id="@task.id"><i class="bi bi-trash "></i></a>
+              </div>
+      </div>
+    }
+  
+
+  <a class="btn-add" asp-controller="AddTask" asp-action="Index" >Add task</a>
+</div>

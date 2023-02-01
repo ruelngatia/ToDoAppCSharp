@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Add";
+}
+@model TaskModel
+
+
+<div class="my-conatainer ">
+  <partial name="_Title"/>
+    
+<form method="post">
+      <label>Task</label>
+      <input asp-for="task" type="text"/>
+      <label>Due date</label>
+      <input asp-for="dueDAte" type="date"/>
+       <button type="submit"  typ class="btn-add" asp-controller="AddTask"  asp-action="addMyTask">Add task</button>
+</form>
+</div>

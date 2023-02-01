@@ -1,0 +1,8 @@
+﻿@using ToDoApp.Functionality;
+@{
+    CustomDate customDate = DateHandler.GetCustomDate();   
+}
+
+<div class="title">
+    @customDate.Date<sup>@customDate.sup</sup> @customDate.month @customDate.year
+  </div>
